@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://1wq5rxrdmo03"]
+
+[ext_resource type="Script" path="res://project/scenes/ui/buttons/quit_button/quit_button.gd" id="1_bajh7"]
+[ext_resource type="Theme" uid="uid://dbd0wbumys8xp" path="res://project/resources/main_theme.tres" id="1_tyxqu"]
+
+[node name="quit_button" type="Button"]
+anchors_preset = -1
+anchor_left = 0.411
+anchor_top = 0.448
+anchor_right = 0.569
+anchor_bottom = 0.519
+offset_left = 0.527985
+offset_top = -0.304016
+offset_right = 0.511963
+offset_bottom = -0.312042
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("1_tyxqu")
+text = "Quit Game"
+script = ExtResource("1_bajh7")

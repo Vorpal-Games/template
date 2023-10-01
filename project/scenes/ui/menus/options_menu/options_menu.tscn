@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfx4cvjutkbim"]
+
+[ext_resource type="Script" path="res://project/resources/classes/base_menu.gd" id="1_ujeqi"]
+[ext_resource type="PackedScene" uid="uid://bkhgm36a44phv" path="res://project/scenes/ui/buttons/back_button/back_button.tscn" id="2_73nyn"]
+
+[node name="OptionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_ujeqi")
+
+[node name="BackButton" parent="." instance=ExtResource("2_73nyn")]
+layout_mode = 1
+offset_left = 1024.0
+offset_top = 23.0
+offset_right = -44.0
+offset_bottom = -594.0

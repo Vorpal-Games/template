@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://b08mtgroh0lhm"]
+
+[ext_resource type="Script" path="res://project/_debug/debug_hud/debug_hud.gd" id="1_fnyym"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cdtu7"]
+font_size = 22
+font_color = Color(0.960784, 0, 0, 1)
+
+[node name="DebugHUD" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fnyym")
+
+[node name="Label" type="Label" parent="."]
+layout_direction = 3
+layout_mode = 0
+offset_left = 21.0
+offset_top = 13.0
+offset_right = 247.0
+offset_bottom = 47.0
+text = "DEBUG MODE ACTIVE"
+label_settings = SubResource("LabelSettings_cdtu7")

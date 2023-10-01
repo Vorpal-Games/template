@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkhgm36a44phv"]
+
+[ext_resource type="Script" path="res://project/scenes/ui/buttons/back_button/back_button.gd" id="1_fqc4r"]
+
+[node name="BackButton" type="Button"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 519.0
+offset_top = 309.0
+offset_right = -557.0
+offset_bottom = -308.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back"
+script = ExtResource("1_fqc4r")

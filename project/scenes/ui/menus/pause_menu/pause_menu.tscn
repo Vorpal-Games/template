@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1tadye5d1sre"]
+
+[ext_resource type="Script" path="res://project/scenes/ui/menus/pause_menu/pause_menu.gd" id="1_nglbr"]
+[ext_resource type="PackedScene" uid="uid://1wq5rxrdmo03" path="res://project/scenes/ui/buttons/quit_button/quit_button.tscn" id="2_m5mit"]
+[ext_resource type="Theme" uid="uid://dbd0wbumys8xp" path="res://project/resources/main_theme.tres" id="3_52gi3"]
+[ext_resource type="PackedScene" uid="uid://cndxd6mvq0chx" path="res://project/scenes/ui/buttons/options_button/options_button.tscn" id="3_cj0k1"]
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_nglbr")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="QuitButton" parent="CenterContainer/VBoxContainer" instance=ExtResource("2_m5mit")]
+process_mode = 3
+layout_mode = 2
+
+[node name="options_button" parent="CenterContainer/VBoxContainer" instance=ExtResource("3_cj0k1")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.5
+offset_right = 28.5
+offset_bottom = 26.0
+grow_horizontal = 2
+theme = ExtResource("3_52gi3")
+text = "Paused"
